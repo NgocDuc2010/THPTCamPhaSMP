@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="vi" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="google" content="notranslate">
+    <title>THPT Cẩm Phả SMP</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-item active" data-tab="home"><span class="material-symbols-rounded">home</span><span>Trang chủ</span></div>
+        <div class="nav-item" data-tab="commands"><span class="material-symbols-rounded">terminal</span><span>Lệnh</span></div>
+        <div class="nav-item" data-tab="rules"><span class="material-symbols-rounded">gavel</span><span>Luật</span></div>
+        <div class="nav-item" data-tab="guide"><span class="material-symbols-rounded">menu_book</span><span>Hướng dẫn</span></div>
+        <div class="nav-item" data-tab="ranks"><span class="material-symbols-rounded">stars</span><span>Rank</span></div>
+        <div class="nav-item" data-tab="support"><span class="material-symbols-rounded">support_agent</span><span>Hỗ trợ</span></div>
+        <div class="nav-item" data-tab="settings"><span class="material-symbols-rounded">settings</span><span>Cài đặt</span></div>
+    </nav>
+
+    <main class="content-area">
+        <section id="home" class="tab-content active">
+            <div class="header-placeholder"><img src="Images/banner.png" alt="Banner" loading="lazy"></div>
+
+            <div id="announcementBar" class="announcement-bar">
+                <div class="announcement-icon"><span class="material-symbols-rounded">android</span></div>
+                <div class="announcement-text-container" id="announcementTextContainer">
+                    <span class="announcement-text" id="announcementText">Đang tải thông báo...</span>
+                </div>
+                <div class="announcement-close" id="closeAnnouncement" title="Đóng thông báo">
+                    <span class="material-symbols-rounded">close</span>
+                </div>
+            </div>
+
+            <div class="card" style="margin-bottom: 25px; text-align: center; border-top: 4px solid var(--primary-color);">
+                <h2 style="margin-bottom: 15px; font-size: 1.8rem;">🌟 Chào mừng đến với THPT Cẩm Phả SMP!</h2>
+                <p style="line-height: 1.8; font-size: 1.1rem; color: var(--text-secondary); text-align: justify;">
+                    Không chỉ là một server sinh tồn (Survival) thông thường, chúng tôi mang đến một trải nghiệm hoàn toàn mới lạ và đầy lôi cuốn. Tại đây, bạn sẽ được đắm chìm vào một thế giới với hệ thống <strong>Kinh tế (Economy)</strong> đa dạng, tham gia các <strong>Sự kiện (Event)</strong> hấp dẫn hàng tuần, và thử vận may với hệ thống <strong>Gacha</strong> độc đáo. <br><br>
+                    Hãy tự do xây dựng đế chế của riêng bạn, giao thương với người chơi khác qua Chợ đen, và săn lùng những <strong>vật phẩm Custom siêu mạnh mẽ</strong> ẩn giấu trong server! Chúc bạn có những giờ phút giải trí tuyệt vời!
+                </p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <h2>👑 Đội ngũ Staff</h2>
+                    <ul>
+                        <li><strong>MinhVuNee</strong> (Owner)</li>
+                        <li><strong>_Sheridan</strong> (Trader)</li>
+                        <li><strong>sabaton</strong> (Builder)</li>
+                        <li><strong>kiomori2</strong> (Builder)</li>
+                        <li><strong>Duc_201001</strong> (Media)</li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="section-title">🏛️ Các công trình tiêu biểu</h2>
+            <div class="card-grid">
+                <div class="card"><img src="Images/top.webp" class="zoomable" loading="lazy"><h3>TOP</h3><p>Trái tim của Server, nơi cất giữ vật phẩm giá trị, khu vực an toàn để trao đổi và xem bảng xếp hạng người chơi xuất sắc.</p></div>
+                <div class="card"><img src="Images/gacha.webp" class="zoomable" loading="lazy"><h3>GACHA</h3><p>Khu vực thử nhân phẩm với hệ thống rương đa dạng (Chiến Binh, Thần Khí...). Cơ hội nhận vật phẩm Custom cực hiếm.</p></div>
+                <div class="card"><img src="Images/thuyenbay.webp" class="zoomable" loading="lazy"><h3>THUYỀN BAY</h3><p>Cảng hàng không lơ lửng giữa bầu trời. Điểm ngắm cảnh tuyệt đẹp bao quát toàn bộ trung tâm Server.</p></div>
+                <div class="card"><img src="Images/langbac.webp" class="zoomable" loading="lazy"><h3>LĂNG BÁC</h3><p>Công trình uy nghiêm, thiêng liêng thể hiện lòng tôn kính. <br><span class="dimmed-text">(Sự kiện 30/4 đã kết thúc)</span></p></div>
+                <div class="card"><img src="Images/ngutrungthap.webp" class="zoomable" loading="lazy"><h3>NGŨ TRÙNG THÁP</h3><p>Tòa tháp 5 tầng mang đậm phong cách kiến trúc Nhật Bản. Điểm tổ chức sự kiện trade đặc biệt YeaMiko.</p></div>
+                <div class="card"><img src="Images/nhatrang.webp" class="zoomable" loading="lazy"><h3>NHÀ TRẮNG</h3><p>Biểu tượng quyền lực, nơi hội họp của Admin và vinh danh những người chơi đạt danh hiệu Top phú hào.</p></div>
+                <div class="card"><img src="Images/khachsan.webp" class="zoomable" loading="lazy"><h3>KHÁCH SẠN</h3><p>Tổ hợp nghỉ dưỡng sang trọng với trải nghiệm phòng ngủ dưới đáy biển và công viên giải trí lân cận.</p></div>
+                <div class="card"><img src="Images/mecung.webp" class="zoomable" loading="lazy"><h3>MÊ CUNG</h3><p>Thử thách sinh tồn trong mê cung khổng lồ bao quanh lâu đài. Nơi tổ chức sự kiện trốn tìm nảy lửa.</p></div>
+            </div>
+            <h2 class="section-title">🌐 Liên kết quan trọng</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <p><strong>IP Server:</strong> THPTCamPhaSMP.aternos.me:31860</p>
+                    <p><strong>Phiên bản:</strong> Java 1.21.11</p>
+                    <p><strong>Zalo:</strong> <a href="https://zalo.me/g/soxzlb641" target="_blank">Tham gia nhóm</a></p>
+                    <p><strong>Discord:</strong> <a href="https://discord.gg/UUb3Qjphb" target="_blank">Tham gia máy chủ</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="commands" class="tab-content">
+            <div class="header-placeholder"><img src="Images/header_commands.webp" loading="lazy"><div class="header-overlay"><h1>⌨ Các câu lệnh</h1></div></div>
+            <div class="card" style="margin-bottom: 20px;"><input type="text" id="commandSearch" class="form-input" placeholder="🔍 Tìm lệnh... (VD: warp, pay)"></div>
+            <div class="card">
+                <h2>Lệnh cơ bản</h2>
+                <ul class="command-list" style="list-style-type: none; margin-left: 0; padding-left: 0;">
+                    <li class="cmd-item"><strong>Mở giao diện điều khiển chính:</strong> <code>/menu</code></li>
+                    <li class="cmd-item"><strong>Dịch chuyển nhanh đến địa điểm công cộng:</strong> <code>/warp &lt;tên địa điểm&gt;</code> (VD: top, gacha, thuyenbay, whitehouse, hotel, mecung, event, nether, theend)</li>
+                    <li class="cmd-item"><strong>Gửi yêu cầu dịch chuyển đến người chơi khác:</strong> <code>/tpa &lt;tên người chơi&gt;</code> (Hủy: <code>/tpcancel</code>, Đồng ý: <code>/tpaccept</code>, Từ chối: <code>/tpdeny</code>)</li>
+                    <li class="cmd-item"><strong>Dịch chuyển sinh tồn:</strong> Dịch chuyển ngẫu nhiên ra khu vực hoang dã để xây nhà (RPM - Random Player Move): <code>/rpm</code></li>
+                    <li class="cmd-item"><strong>Cửa hàng hệ thống:</strong> Mở Menu mua bán đồ cơ bản: <code>/shop</code></li>
+                    <li class="cmd-item"><strong>Nhiệm vụ:</strong> Xem và nhận bảng nhiệm vụ hàng ngày/tuần để kiếm tiền: <code>/quest</code></li>
+                    <li class="cmd-item"><strong>Chuyển tiền:</strong> Chuyển tiền trong game cho người chơi khác: <code>/pay &lt;số tiền&gt; &lt;tên&gt;</code></li>
+                    <li class="cmd-item"><strong>Cá cược:</strong> Tạo ván Đỏ đen (Coinflip): <code>/cf &lt;số tiền&gt;</code> (Xem danh sách: <code>/cf</code>)</li>
+                    <li class="cmd-item"><strong>Xổ số:</strong> Mở giao diện mua vé số Server: <code>/lottery gui</code></li>
+                    <li class="cmd-item"><strong>Chợ đen (Auction House):</strong> Mở chợ đen: <code>/ah</code> (Bán đồ đang cầm trên tay: <code>/ah sell &lt;giá&gt;</code>)</li>
+                    <li class="cmd-item"><strong>Hệ thống cá nhân:</strong> Xem Rank (<code>/rank</code>), Xem Danh hiệu (<code>/capbac</code>)</li>
+                    <li class="cmd-item"><strong>Quản lý Nhà:</strong> Đặt vị trí nhà (<code>/sethome</code>), Dịch chuyển về nhà (<code>/home</code>)</li>
+                    <li class="cmd-item"><strong>Hỗ trợ:</strong> Nhắn tin khẩn cấp cho Admin đang online để báo lỗi: <code>/helpop &lt;nội dung&gt;</code></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="rules" class="tab-content">
+            <div class="header-placeholder"><img src="Images/header_rules.webp" loading="lazy"><div class="header-overlay"><h1>⚖️ Bộ Luật Server</h1></div></div>
+            <div class="card" style="border-left: 5px solid #4CAF50; margin-bottom: 20px;">
+                <h2 style="color: #4CAF50;">✅ ĐIỀU 1: VĂN HÓA CỘNG ĐỒNG</h2>
+                <ul>
+                    <li>Tôn trọng lẫn nhau, giao tiếp lịch sự.</li>
+                    <li>Bảo quản công trình công cộng chung của Server.</li>
+                    <li>Giao thương công bằng, minh bạch.</li>
+                    <li>Chỉ dùng máy farm/rương đồ khi chủ sở hữu đồng ý.</li>
+                </ul>
+            </div>
+            <div class="card" style="border-left: 5px solid #F44336; margin-bottom: 20px;">
+                <h2 style="color: #F44336;">❌ ĐIỀU 2: CÁC HÀNH VI NGHIÊM CẤM</h2>
+                <ul>
+                    <li>Cấm gian lận (Hack/Cheat X-Ray, Fly, AutoClick).</li>
+                    <li>Cấm phá hoại công trình hoặc trộm cắp Base.</li>
+                    <li>Cấm lạm dụng lỗi (Bug Abuse/Dupe đồ).</li>
+                    <li>Cấm lừa đảo (Scam), cấm thái độ Toxic/Spam chat.</li>
+                    <li><strong>Cấm lạm dụng Hỗ trợ:</strong> Không dùng tính năng Góp ý/Báo lỗi để đùa giỡn, chửi bới, spam hoặc gửi thông tin sai lệch cho Admin.</li>
+                </ul>
+            </div>
+            <div class="card" style="background-color: var(--primary-container);">
+                <h2>⚠️ ĐIỀU 3: 5 MỨC ĐỘ KHUNG HÌNH PHẠT</h2>
+                <ul>
+                    <li><strong>1. MỨC NHẸ:</strong> Nhắc nhở, Cảnh cáo hoặc Mute Chat (1h - 24h).</li>
+                    <li><strong>2. TRUNG BÌNH - NHẸ:</strong> Thu hồi vật phẩm, Phạt tiền hoặc Tịch thu tài sản vi phạm.</li>
+                    <li><strong>3. TRUNG BÌNH:</strong> Đền bù thiệt hại x2 lần, Kích khỏi Server (Kick) hoặc Hạ Rank.</li>
+                    <li><strong>4. TRUNG BÌNH - NẶNG:</strong> Bỏ tù (Jail) từ 1 đến 7 ngày, đóng băng toàn bộ tài sản.</li>
+                    <li><strong>5. MỨC NẶNG:</strong> Khóa tài khoản (Ban) vĩnh viễn hoặc Ban IP đối với hành vi phá hoại/hack nghiêm trọng.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="guide" class="tab-content">
+            <div class="header-placeholder"><img src="Images/header_guide.webp" loading="lazy"><div class="header-overlay"><h1>📖 Hướng dẫn người chơi</h1></div></div>
+            <div class="card">
+                <h2>🚀 Hành trang Tân thủ</h2>
+                <ul style="list-style-type: none;">
+                    <li style="margin-bottom: 12px;"><strong>Bước 1: Vào game:</strong> Java 1.21.11 ➔ Nhiều người chơi ➔ Thêm máy chủ ➔ IP: <code>THPTCamPhaSMP.aternos.me:31860</code></li>
+                    <li style="margin-bottom: 12px;"><strong>Bước 2: Tài khoản:</strong> Lần đầu: <code>/register &lt;mật khẩu&gt; &lt;nhập lại mk&gt;</code>. Các lần sau: <code>/login &lt;mật khẩu&gt;</code>.</li>
+                    <li style="margin-bottom: 12px;"><strong>Bước 3: Kiếm tiền:</strong> Làm nhiệm vụ hệ thống qua lệnh <code>/quest</code>, cày cuốc giao thương chợ đen <code>/ah</code> hoặc tham gia Event Admin tổ chức.</li>
+                    <li><strong>Bước 4: An cư:</strong> Sử dụng lệnh <code>/rpm</code> để ra ngoài hoang dã xây nhà, sau đó lưu vị trí bằng <code>/sethome</code>.</li>
+                </ul>
+            </div>
+            <h2 class="section-title">⚔️ Vị trí vật phẩm mạnh</h2>
+            <div class="card-grid">
+                <div class="card"><img src="Images/aresv2.webp" class="zoomable" loading="lazy"><h3>1. Kiếm Ares V2</h3><p>Tại TOP.</p></div>
+                <div class="card"><img src="Images/riunguyetanh.webp" class="zoomable" loading="lazy"><h3>2. Rìu Nguyệt Ảnh</h3><p>Cạnh chỗ Trade Ares V2.</p></div>
+                <div class="card"><img src="Images/cupgiga.webp" class="zoomable" loading="lazy"><h3>3. Cúp Giga</h3><p>Ngôi nhà trước TOP.</p></div>
+                <div class="card"><img src="Images/muathena.webp" class="zoomable" loading="lazy"><h3>4. Mũ Athena</h3><p>Đỉnh THUYỀN BAY.</p></div>
+                <div class="card"><img src="Images/hecate.webp" class="zoomable" loading="lazy"><h3>5. Áo Hecate</h3><p>Tầng 2 NHÀ TRẮNG.</p></div>
+                <div class="card"><img src="Images/quanares.webp" class="zoomable" loading="lazy"><h3>6. Quần Ares</h3><p>Tầng 2 NHÀ TRẮNG.</p></div>
+                <div class="card"><img src="Images/helios.webp" class="zoomable" loading="lazy"><h3>7. Ủng Helios</h3><p>Cạnh cây hoa đào (GACHA).</p></div>
+                <div class="card"><img src="Images/cancau.webp" class="zoomable" loading="lazy"><h3>8. Cần Câu Nguyệt Ảnh</h3><p>Sau nhà trước TOP.</p></div>
+            </div>
+        </section>
+
+        <section id="ranks" class="tab-content">
+            <div class="header-placeholder"><img src="Images/header_ranks.webp" loading="lazy"></div>
+            <div class="card-grid">
+                <div class="card rank-card">
+                    <h3>VIP</h3><p class="price">2.000.000 $</p>
+                    <ul>
+                        <li><code>/craft</code>: Mở Bàn chế tạo mọi lúc</li>
+                        <li><code>/hat</code>: Đội vật phẩm đang cầm lên đầu</li>
+                        <li><code>/feed</code>: Nạp đầy thanh thức ăn nhanh</li>
+                        <li><code>/pv &lt;1-3&gt;</code>: Mở rương cá nhân từ 1 đến 3</li>
+                    </ul>
+                </div>
+                <div class="card rank-card">
+                    <h3>VIP +</h3><p class="price">5.000.000 $</p>
+                    <ul>
+                        <li><code>/ec</code>: Mở Rương Ender mọi nơi</li>
+                        <li><code>/wb</code>: Mở nhanh Bàn chế tạo</li>
+                        <li>Bao gồm tất cả quyền lợi của VIP</li>
+                    </ul>
+                </div>
+                <div class="card rank-card">
+                    <h3>MVP</h3><p class="price">10.000.000 $</p>
+                    <ul>
+                        <li><code>/trash</code>: Mở thùng rác để vứt đồ thừa</li>
+                        <li><code>/heal</code>: Hồi đầy thanh máu & thức ăn</li>
+                        <li><code>/pv &lt;1-7&gt;</code>: Mở rương cá nhân từ 1 đến 7</li>
+                        <li>Bao gồm tất cả quyền lợi của VIP+</li>
+                    </ul>
+                </div>
+                <div class="card rank-card">
+                    <h3>MVP +</h3><p class="price">15.000.000 $</p>
+                    <ul>
+                        <li><code>/fix</code>: Sửa chữa món đồ đang cầm</li>
+                        <li><code>/near</code>: Quét tìm người chơi ở gần mình</li>
+                        <li>Bao gồm tất cả quyền lợi của MVP</li>
+                    </ul>
+                </div>
+                <div class="card rank-card">
+                    <h3>KING</h3><p class="price">25.000.000 $</p>
+                    <ul>
+                        <li><code>/fly</code>: Kích hoạt chế độ Bay (Fly mode)</li>
+                        <li><code>/pv &lt;1-10&gt;</code>: Mở rương cá nhân từ 1 đến 10</li>
+                        <li>Bao gồm tất cả quyền lợi của MVP+</li>
+                    </ul>
+                </div>
+                <div class="card rank-card">
+                    <h3>KING +</h3><p class="price">50.000.000 $</p>
+                    <ul>
+                        <li><code>/top</code>: Dịch chuyển lên vị trí cao nhất</li>
+                        <li><code>/anvil</code>: Sử dụng Đe đập đồ mọi nơi</li>
+                        <li>Bao gồm tất cả quyền lợi của KING</li>
+                    </ul>
+                </div>
+                <div class="card rank-card">
+                    <h3>BẤT DIỆT</h3><p class="price">250.000.000 $</p>
+                    <ul>
+                        <li><code>/blocks</code>: Tự gộp khoáng sản thành 1 block</li>
+                        <li><code>/vanish</code>: Tàng hình giấu tên hoàn toàn</li>
+                        <li><code>/pv &lt;1-20&gt;</code>: Mở rương cá nhân từ 1 đến 20</li>
+                        <li>Bao gồm tất cả quyền lợi của KING+</li>
+                    </ul>
+                </div>
+                <div class="card rank-card" style="border: 2px solid var(--primary-color);">
+                    <h3>LORD 👑</h3><p class="price">500.000.000 $</p>
+                    <ul>
+                        <li><code>/flyspeed</code>: Thay đổi tốc độ bay nhanh chậm</li>
+                        <li><code>/walkspeed</code>: Thay đổi tốc độ đi bộ/chạy</li>
+                        <li><code>/invsee</code>: Xem kho đồ của người khác</li>
+                        <li><code>/sethome &lt;10&gt;</code>: Cho phép đặt tối đa 10 nhà</li>
+                        <li>Bao gồm tất cả quyền lợi của BẤT DIỆT</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="support" class="tab-content">
+            <div class="header-placeholder"><img src="Images/header_support.webp" loading="lazy"></div>
+            <div class="card">
+                <form id="supportForm">
+                    <div class="form-group"><label class="form-label">Loại yêu cầu:</label><select id="requestType" class="form-input" required><option value="gopy">💡 Góp ý</option><option value="baoloi">🐞 Báo lỗi</option><option value="tocao">🚨 Tố cáo</option></select></div>
+                    <div class="form-group"><label class="form-label">Tên người chơi:</label><input type="text" id="playerName" class="form-input" placeholder="Nhập tên nhân vật..." required></div>
+                    <div class="form-group checkbox-group"><label class="switch"><input type="checkbox" id="isAnonymous"><span class="slider round"></span></label><span><strong>Ẩn danh:</strong> Giấu tên của bạn khi công bố lên Discord.</span></div>
+                    <div class="form-group checkbox-group"><label class="switch"><input type="checkbox" id="hideEvidence"><span class="slider round"></span></label><span><strong>Ẩn bằng chứng:</strong> Không công khai bằng chứng lên Discord.</span></div>
+                    <div class="form-group"><label class="form-label">Link đính kèm (Bằng chứng):</label><input type="url" id="evidenceLink" class="form-input" placeholder="Dán link ảnh/video từ Drive, Youtube, Discord..."></div>
+                    <div class="form-group"><label class="form-label">Chi tiết ý kiến:</label><textarea id="playerContent" rows="4" class="form-input" required></textarea></div>
+                    <button type="submit" id="submitBtn" class="btn-primary" style="width: 100%;">Gửi yêu cầu</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="settings" class="tab-content">
+            <div class="header-placeholder"><img src="Images/header_settings.webp" loading="lazy"></div>
+            <div class="card">
+                <div class="setting-item"><span>Giao diện tối 🌙</span><label class="switch"><input type="checkbox" id="themeToggle"><span class="slider round"></span></label></div>
+                <div class="setting-item" style="margin-top: 20px;"><span>Hiệu ứng chuyển động ✨</span><label class="switch"><input type="checkbox" id="animToggle" checked><span class="slider round"></span></label></div>
+                <div class="setting-item" style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--surface-variant);">
+                    <span>Ngôn ngữ / Language 🌐</span>
+                    <select id="langSelect" class="form-input" style="width: 150px; padding: 8px;">
+                        <option value="vi">Tiếng Việt</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Được xây dựng với ❤️ bởi cộng đồng <strong>THPT Cẩm Phả SMP</strong>.</p>
+            <p style="margin-top: 5px;">Chúc các bạn chơi game vui vẻ!</p>
+        </footer>
+    </main>
+    <div id="imageModal" class="modal"><span class="close" id="closeModalBtn">&times;</span><img class="modal-content" id="img01"></div>
+    <script src="script.js" defer></script>
+</body>
+</html>
