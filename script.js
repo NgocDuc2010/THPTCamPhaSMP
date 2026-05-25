@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // ➔ NHỚ DÁN LINK API VÀO ĐÂY:
-    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz03hI849YqIdrF4ujbxeltFLq9zE2d_5YuflRim5ww4tKCveuwdyvk7k3BN91ZAVBp/exec";
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwjz-SooncGBULYn2LGfNmaX5O71heaLOAmoUa5kgEBQhgtjkth5KEXGc42hGk6Iqnu/exec";
     const isEnglish = window.location.href.includes('en.html');
 
     // ==========================================
